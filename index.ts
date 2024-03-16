@@ -2,7 +2,7 @@ import express, { type Request, type Response } from 'express';
 import puppeteer from 'puppeteer';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || '8000';
 
 app.use(express.json());
 
